@@ -6,35 +6,6 @@
 
 <link href="https://fonts.googleapis.com/css?family=Creepster|Indie+Flower|ZCOOL+KuaiLe" rel="stylesheet">
 
-<style>
- #clock {
-     font-size: 60px;
-     margin-left:auto;
-     margin-right:auto;
- }
- #question {
-     width: 50%;
-     color: red;
-     text-align: center;
-     font-size: 60px;
-     margin:auto;
-     /* margin-top: 20%; */
-     /* margin-left:auto; */
-     /* margin-right:auto; */
-     font-family: 'Creepster', cursive;
-     -ms-transform: rotate(-20deg); /* IE 9 */
-     -webkit-transform: rotate(-20deg); /* Safari */
-     transform: rotate(-20deg);
-
- }
- .vertical-center {
-     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-     min-height: 100%; /* Fallback */
-     /* display: flex; */
-     align-items: center;
-}
- /* } */
-</style>
 <!-- Matomo -->
 <script type="text/javascript">
  var _paq = _paq || [];
@@ -50,14 +21,46 @@
  })();
 </script>
 <!-- End Matomo Code -->
+
+<style>
+ #wrapper {
+     margin-left:auto;
+     margin-right:auto;
+ }
+ #clock {
+     font-size: 60px;
+     text-align: center;
+ }
+ #question {
+     /* width: 50%; */
+     width: 5em;
+     color: red;
+     text-align: center;
+     font-size: 60px;
+     margin:auto;
+     font-family: 'Creepster', cursive;
+     -ms-transform: rotate(-20deg); /* IE 9 */
+     -webkit-transform: rotate(-20deg); /* Safari */
+     transform: rotate(-20deg);
+
+ }
+ .vertical-center {
+     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+     min-height: 100vh; /* Fallback */
+     display: flex;
+     align-items: center;
+}
+</style>
 </head>
 <body>
     <div class="container">
         <div class="vertical-center">
-            <div id="clock" ></div>
-        </div>
-        <div id="question">
-            In 10 years where will you be ?
+            <div id="wrapper">
+                <div id="clock" ></div>
+                <div id="question">
+                    In 10 years where will you be ?
+                </div>
+            </div>
         </div>
     </div>
 
